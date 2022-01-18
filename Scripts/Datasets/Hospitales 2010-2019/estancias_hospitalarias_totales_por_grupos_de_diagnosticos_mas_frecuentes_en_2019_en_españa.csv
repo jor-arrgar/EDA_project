@@ -1,0 +1,34 @@
+﻿"Año";"Periodo";"Parámetro";"Estancias";"Porcentaje sobre el total de estancias "
+"2019";"Año";"Aparato circulatorio";"5.572.561";"14,1"
+"2019";"Año";"Aparato digestivo";"3.393.696";"8,6"
+"2019";"Año";"Aparato genitourinario";"1.795.764";"4,5"
+"2019";"Año";"Aparato músculo-esquelético y del tejido conectivo";"1.847.084";"4,7"
+"2019";"Año";"Aparato respiratorio";"4.358.304";"11"
+"2019";"Año";"Episodios de embarazo, parto y puerperio";"1.278.217";"3,2"
+"2019";"Año";"Lesiones, envenenamientos y otras consecuencias de causas externas";"3.878.480";"9,8"
+"2019";"Año";"Sistema nervioso";"1.358.100";"3,4"
+"2019";"Año";"Trastornos mentales y del comportamiento";"5.965.518";"15,1"
+"2019";"Año";"Tumores";"3.811.756";"9,6"
+;;;
+;;;
+"Métrica":"Estancias"
+"Fuente":"INE"
+"Clasificación":""
+"Unidad":"Totales"
+"Escala":"Unidades"
+"EscalaFactorPotencia10":"0"
+"SonDatosNumericos":"True"
+;;;
+;;;
+"Métrica":"Porcentaje sobre el total de estancias "
+"Fuente":"INE"
+"Clasificación":""
+"Unidad":"%"
+"Escala":"Unidades"
+"EscalaFactorPotencia10":"0"
+"SonDatosNumericos":"True"
+;;;
+;;;
+"Url":"https://www.epdata.es/estancias-totales-grupos-diagnosticos-mas-frecuentes/383afeab-9a43-4086-8183-007035210c0a"
+"Titulo":"Estancias hospitalarias totales por grupos de diagnósticos más frecuentes en 2019 en España"
+"Subtitulo":""

@@ -1,0 +1,32 @@
+﻿"Año";"Periodo";"Públicos-SNS";"Privados"
+"2010";"Año";"470.660";"81.107"
+"2011";"Año";"465.644";"82.192"
+"2012";"Año";"455.441";"82.714"
+"2013";"Año";"452.275";"85.392"
+"2014";"Año";"462.230";"87.805"
+"2015";"Año";"469.523";"90.611"
+"2016";"Año";"476.432";"93.612"
+"2017";"Año";"486.652";"95.358"
+;;;
+;;;
+"Métrica":"Públicos-SNS"
+"Fuente":"Ministerio de Sanidad"
+"Clasificación":""
+"Unidad":"Hospitales"
+"Escala":"Unidades"
+"EscalaFactorPotencia10":"0"
+"SonDatosNumericos":"True"
+;;;
+;;;
+"Métrica":"Privados"
+"Fuente":"Ministerio de Sanidad"
+"Clasificación":""
+"Unidad":"Hospitales"
+"Escala":"Unidades"
+"EscalaFactorPotencia10":"0"
+"SonDatosNumericos":"True"
+;;;
+;;;
+"Url":"https://www.epdata.es/personal-hospitales-espanoles/3b21a40c-0597-407e-a8d0-b32e71463365"
+"Titulo":"Personal en hospitales españoles"
+"Subtitulo":""

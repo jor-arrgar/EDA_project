@@ -1,0 +1,32 @@
+﻿"Año";"Periodo";"Públicos-SNS";"Privados"
+"2010";"Año";"3.231";"723"
+"2011";"Año";"3.317";"771"
+"2012";"Año";"3.463";"823"
+"2013";"Año";"3.467";"831"
+"2014";"Año";"3.434";"864"
+"2015";"Año";"3.558";"869"
+"2016";"Año";"3.482";"909"
+"2017";"Año";"3.508";"896"
+;;;
+;;;
+"Métrica":"Públicos-SNS"
+"Fuente":"Ministerio de Sanidad"
+"Clasificación":""
+"Unidad":"Camas en funcionamiento"
+"Escala":"Unidades"
+"EscalaFactorPotencia10":"0"
+"SonDatosNumericos":"True"
+;;;
+;;;
+"Métrica":"Privados"
+"Fuente":"Ministerio de Sanidad"
+"Clasificación":""
+"Unidad":"Camas en funcionamiento"
+"Escala":"Unidades"
+"EscalaFactorPotencia10":"0"
+"SonDatosNumericos":"True"
+;;;
+;;;
+"Url":"https://www.epdata.es/camas-funcionamiento-ucis-hospitales-publicos-sns-privados/be11e3fa-6312-4fdb-a485-aa3fd62e5a8d"
+"Titulo":"Camas en funcionamiento en UCIs de hospitales públicos del SNS y privados"
+"Subtitulo":""

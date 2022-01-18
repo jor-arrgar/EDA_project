@@ -1,0 +1,23 @@
+﻿"Año";"Periodo";"Camas en funcionamiento (Públicos-SNS)"
+"2010";"Año";"3.231"
+"2011";"Año";"3.317"
+"2012";"Año";"3.463"
+"2013";"Año";"3.467"
+"2014";"Año";"3.434"
+"2015";"Año";"3.558"
+"2016";"Año";"3.482"
+"2017";"Año";"3.508"
+;;
+;;
+"Métrica":"Camas en funcionamiento (Públicos-SNS)"
+"Fuente":"Ministerio de Sanidad"
+"Clasificación":""
+"Unidad":"Camas en funcionamiento"
+"Escala":"Unidades"
+"EscalaFactorPotencia10":"0"
+"SonDatosNumericos":"True"
+;;
+;;
+"Url":"https://www.epdata.es/camas-funcionamiento-unidades-cuidados-intensivos-hospitales/adee6173-f8e2-4611-b7f3-3bb864a5ddab"
+"Titulo":"Camas en funcionamiento en Unidades de Cuidados Intensivos (UCI) en hospitales del SNS"
+"Subtitulo":"(No están incluidas las áreas asistenciales de media y larga estancia )"

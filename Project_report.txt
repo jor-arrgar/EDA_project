@@ -1,0 +1,61 @@
+-- COVID19 EN ESPAÑA -- 			
+
+Proyecto de Exploración y Análisis de Datos (EDA, Exploratory Data Analysis) basado en los datos de la pandemia de covid19 en España.
+
+==> El proyecto no está completo. --- 17/01/2022
+
+Realizado con python 3.7 en el entorno de visualización Streamlit. Se han utilizado las siguientes librerias de Python:
+- pandas
+- numpy
+- plotly
+- streamlit
+- matplotlib
+
+Los datos han sido extraidos de fuentes oficiales del Gobierno de España: INE, Instituto Carlos III, Centro Nacional de Epidemiología y Ministerio de Sanidad.
+Ha sido necesario tatar todas los archivos .csv para eliminar filas finales (normalmente) que solo contenian info de los datos y generaban NaNs en una dataframe; además de cambios de formato (de str a int, a float), modificación del formato de fecha y agrupación según territorios. Por último, la mayoria de los datos se presentaban en una frecuencia diaria, por lo que para simplificar su comprensión se han agrupado en semanas (a través de suma o de media, según dato).
+El tratamiento de cada .csv se puede observar en notebooks guardados en la misma carpeta que contiene los diferentes grupos de datos dentro de la carpeta 'Datasets'. Una vez generados los .csv finales, se han copiado a la carpeta 'Útiles' dentro de 'Datasets' y hay se han creado notebooks de previsualización de gráficas. Comprobado el correcto funcionamiento de cada gráfica, se ha copiado el codigo a un script de gráficas 'graphics_...'.py, el cual se enlaza al script data_and_graphics.py
+
+La aplicación consta de 3 scripts principales:
+- main.py \ Contiene el selectbox principal (menú principal). Permite elegir la página del informe ('Introducción' , '¿Qué es la covid19? , 'La pandemia en datos' , 'Otros datos' , 'Conclusiones') y enlaza a las funciones del script functions.py.
+
+- functions.py \ Contiene las funciones de generación de gráficas de cada página :
+	- introduccion() \ Escribe el texto de la página de introducción y coloca una imagen decorativa
+	- covid19() \ Escribe un texto explicativo de que es la covid19 y el SARS-CoV-2. También coloca 2 imágenes decorativas.
+	- datos_covid19() \ Genera las graficas de datos exclusivamente relacionados con el covid19. Enlaza la función lines_raw() del script data_and_graphics.py.
+	- otros_datos() \ Genera diferentes gráficas relacionadas con la gripe, la mortalidad general e indicadores de asistencia hospitalaria prepandémica a través de la función comp_graphics() del script data_and_graphics.py.
+	- conclusiones() \ Genera una gráfica comparativa de la incidencia de gripe y de covid19 por 100.000 habitantes y un texto con las conclusiones del informe. Utiliza la función conclusiones() del script conclusiones.py.
+
+- data_and_graphics.py \  contiene las funciones de presentación de las gráficas plotly. 
+	- lines_raw() \ Contiene un selectbox con las opciones siguientes:
+		- 'Contagios': a su vez, contiene un 2º selectbox para elegir la escala territorial, o CCAA o provincias. Muestra una gráfica del nº de contagios de SARS-CoV-2 por semana
+		- 'Ingresos hospitalarios y defunciones' : muestra un menú compuesto por multiples checkboxes asociadas a una CCAA. Al pulsar en una que esté compuesta por varias provincias, se generan las checkboxes correspondientes a cada provincia. Seleccionada la provincia (o CCAA uniprovincial), muestra los gráficos de líneas correspondientes a cada una con los datos de casos covid19 , hospitalizaciones, ingresos en UCI y fallecimientos por semana.
+		- 'Nº de camas por comunidad autónoma' : a través de un conjunto de checktboxes de cada CCAA, muestra gráficos de barras apiladas que muestran las camas ocupadas por pacientes covid, por pacientes no covid y las camas vacias. Su suma resulta en el nº de camas totales en cada CCAA. Media semanal.
+	- otros_datos() \ Un selectbox con las siguientes opciones:
+		- 'Mortalidad en España' \ Datos de mortalidad general por diferentes causas en España entre 1980-2020. Valores mensuales.
+		- 'Mortalidad enfermedades respiratorias' \ Datos de mortalidad por enfermedades respiratorias. Datos extraidos del mismo .csv que la anterior opcion. Valores mensuales.
+		- 'Incidencia de gripe' \ Incidencia de gripe por 100.000 habitantes por semana. Una selectbox para elegir si mostrar por CCAA o por año (2015-2021), y un menu de checkboxes para elegir que gráficos visualizar.
+		- 'Sistema sanitario' \ Contiene una selectbox con las siguientes opciones:
+			- 'Camas hospitalarias x 1.000 habitantes' \ Valores anuales desde 1996 hasta 2019.
+			- 'Gasto público en el sistema sanitario' \ Gráfico de barras (actualmente no funciona, desconozco la razón).
+			- 'Porcentaje de gasto atención primaria' \ % que cada comunidad destina a la atención primaria de su gasto sanitario total.
+
+
+Además de estos 3 scripts, la aplicación presenta diferentes scripts para la generación de figuras pyplot:
+- graphics_covid.py \ Generación de gráficos con datos covid.
+- graphics_mortality_80_20.py \ Generación de gráficos de mortalidad en España entre 1980 y 2020.
+- graphics_flu.py \ Gráficos de incidencia de gripe por CCAA
+- graphics_sanitary_indicators.py \ Gráficos de indicadores del funcionamiento del sistema sanitario
+- conclusiones.py \ Gráfica covid19 vs gripe y conclusiones finales (text)
+
+
+==> Los menus de múltiples checkboxes se han incluido para poder visualizar varias gráficas diferentes a la vez. Al mostrarse están ordenadas alfabéticamente.
+
+
+==> ELEMENTOS QUE FALTAN EN EL INFORME
+	- Arreglar gráfico de barras en 'Gasto público en el sistema sanitario'
+	- Generar datos de incidencia de contagios por ccaa y por provincia por 100.000 habitantes (nuevo script)
+	- Generar datos de camas x 1.000 habitantes durante la pandemia
+	- Crear mapas cloropeth de incidencia x 100.000 habitantes (nuevo script)
+	- Incluir indicadores de medidas tomadas para frenar la transmision del virus en los gráficos de incidencia para comprobar efectividad. Activar a través de checkbox. 
+	- Escribir la info de la página '¿Qué es la covid19?' de forma estrictamente científica (con referencias bibliográficas) y añadir bibliografia en una pestaña desplegable.
+	- Decoración y estilo.

@@ -1,0 +1,28 @@
+﻿"Año";"Periodo";"Camas en hospitales del SNS"
+"2007";"Año";"88.170"
+"2008";"Año";"87.822"
+"2009";"Año";"92.365"
+"2010";"Año";"94.125"
+"2011";"Año";"94.430"
+"2012";"Año";"95.282"
+"2013";"Año";"95.254"
+"2014";"Año";"93.411"
+"2015";"Año";"92.926"
+"2016";"Año";"92.703"
+"2017";"Año";"92.264"
+"2018";"Año";"93.212"
+"2019";"Año";"92.357"
+;;
+;;
+"Métrica":"Camas en hospitales del SNS"
+"Fuente":"Ministerio de Sanidad"
+"Clasificación":""
+"Unidad":"Camas hospitalarias"
+"Escala":"Unidades"
+"EscalaFactorPotencia10":"0"
+"SonDatosNumericos":"True"
+;;
+;;
+"Url":"https://www.epdata.es/camas-hospitales-sistema-nacional-salud/4ec95dd5-61ed-446f-b726-b3c3ee969392"
+"Titulo":"Camas en hospitales del Sistema Nacional de Salud"
+"Subtitulo":""

@@ -1,0 +1,45 @@
+﻿"Año";"Periodo";"Mujeres";"Hombres";"Total"
+"2008";"Año";"50,2";"53,8";"51,9"
+"2009";"Año";"50,9";"54,3";"52,5"
+"2010";"Año";"51,4";"54,8";"53"
+"2011";"Año";"52";"55,2";"53,5"
+"2012";"Año";"52,8";"55,9";"54,2"
+"2013";"Año";"53,4";"56,3";"54,7"
+"2014";"Año";"53,8";"56,7";"55,2"
+"2015";"Año";"54,5";"57,3";"55,8"
+"2016";"Año";"54,8";"57,6";"56,1"
+"2017";"Año";"55,3";"57,9";"56,6"
+"2018";"Año";"55,76";"58,4";"57,03"
+"2019";"Año";"55,9";"58,5";"57,2"
+;;;;
+;;;;
+"Métrica":"Mujeres"
+"Fuente":"INE"
+"Clasificación":""
+"Unidad":"Edad media"
+"Escala":"Unidades"
+"EscalaFactorPotencia10":"0"
+"SonDatosNumericos":"True"
+;;;;
+;;;;
+"Métrica":"Hombres"
+"Fuente":"INE"
+"Clasificación":""
+"Unidad":"Edad media"
+"Escala":"Unidades"
+"EscalaFactorPotencia10":"0"
+"SonDatosNumericos":"True"
+;;;;
+;;;;
+"Métrica":"Total"
+"Fuente":"INE"
+"Clasificación":""
+"Unidad":"Edad media"
+"Escala":"Unidades"
+"EscalaFactorPotencia10":"0"
+"SonDatosNumericos":"True"
+;;;;
+;;;;
+"Url":"https://www.epdata.es/asi-aumentando-edad-media-pacientes-ingresan-hospitales/05a715f3-87a1-4c59-8425-f756d51158d6"
+"Titulo":"Así está aumentando la edad media de los pacientes que ingresan en los hospitales"
+"Subtitulo":""
