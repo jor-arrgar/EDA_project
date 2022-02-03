@@ -1,4 +1,5 @@
 import streamlit as st
+
 #Conexión a los diferentes notebooks en los que se han generado las gráficas
 import conclusiones as c
 import graphics_covid as gc
@@ -537,5 +538,6 @@ def other_data():
 
 
 def conclusiones():
-    st.plotly_chart(c.covid_vs_influenza)
+
+    st.plotly_chart(gf.covid_vs_influenza)
     st.write(c.conclusiones)
