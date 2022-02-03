@@ -4,7 +4,7 @@ import data_and_graphics as dg
 def introduccion():
     st.title('LA PANDEMIA DE COVID19')
     st.write('Proyecto de exploración y análisis de datos realizado por Jorge Arranz como parte del curso en Data Science de la academia The Bridge. \nEn este proyecto se analizan los datos relacionados con la pandemia de covid19 en España. Esta pandemia comenzó en enero de 2020 en China y ha afectado a todo el planeta desde estonces. \n')
-    st.image('.\images\Covid-19.jpg')
+    st.image('https://cespad.org.hn/wp-content/uploads/2020/06/COVID19-Header-Image.jpg')
     st.write('La finalidad de este trabajo es demostrar que la covid19 ha sido una enfermedad pandémica y que las medidas adoptadas para frenar o paliar sus efectos sobre la población han surtido el efecto deseado reduciendo tanto la incidencia como la mortalidad. \n\nEl análisis ha sido realizado en Python 3.7, "latin" como lenguaje de codificación y se ha usado la interfaz de Streamlit para una mejor visualización de los diferentes datos. Las gráficas han sido generadas con Plotly y los datos han sido extraídos de fuentes oficiales del Gobierno de España (INE , Instituto Carlo III y Ministerio de Sanidad). Salvo con los datos de incidencia de gripe, los valores realcionados con el covid han sido extraídos como valores totales y posteriormente se han transformado en valores de incidencia (x100.000 habitantes). \n\nProyecto finalizado el 16 de enero de 2022 con datos hasta el 26 de diciembre de 2021.')
 
 def covid19():
