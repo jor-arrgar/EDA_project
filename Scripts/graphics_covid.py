@@ -3,8 +3,6 @@ from plotly.offline import init_notebook_mode, iplot, plot
 import plotly as py
 init_notebook_mode(connected=True)
 import plotly.graph_objects as go
-import os
-import matplotlib.pyplot as plt
 
 #Casos covid por ccaa
 covid_semanal_ccaa = pd.read_csv('Scripts/Datasets/Utiles/CNE_covid/covid_semanal_ccaa.csv' , sep= ';')

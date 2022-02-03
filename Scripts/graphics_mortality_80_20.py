@@ -3,8 +3,7 @@ from plotly.offline import init_notebook_mode, iplot, plot
 import plotly as py
 init_notebook_mode(connected=True)
 import plotly.graph_objects as go
-import os
-import matplotlib.pyplot as plt
+
 
 # Mortalidad enfermedades respiratorias
 df1= pd.read_csv('Scripts/Datasets/Utiles/Defunciones_1980-2020/Meses_vs_causas_respiratorias.csv' , sep= ';' , encoding='latin')

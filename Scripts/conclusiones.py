@@ -1,11 +1,8 @@
-'''
 import pandas as pd
 #import plotly
 from plotly.offline import init_notebook_mode, iplot, plot
 init_notebook_mode(connected=True)
 import plotly.graph_objects as go
-import os
-import matplotlib.pyplot as plt
 
 #Incidencia de covid
 covid_semanal_ccaa = pd.read_csv('Scripts/Datasets/Utiles/CNE_covid/covid_semanal_ccaa.csv' , sep= ';')
@@ -54,7 +51,7 @@ data= [covid , gripe_16 , gripe_17 , gripe_18 , gripe_19 , gripe_20 , gripe_21]
 layout = dict(title= 'Covid19 vs Influenza. Incidencia por 100.000 habitantes' , xaxis= dict(title= 'Semana') , yaxis= dict(title= 'Casos por 100.000 habitantes'))
 
 covid_vs_influenza = go.Figure(data= data , layout= layout)
-'''
+
 
 
 #Conclusiones

@@ -3,8 +3,7 @@ from plotly.offline import init_notebook_mode, iplot, plot
 import plotly as py
 init_notebook_mode(connected=True)
 import plotly.graph_objects as go
-import os
-import matplotlib.pyplot as plt
+
 
 #Camas por 1000 hab
 df1 = pd.read_csv('Scripts/Datasets/Utiles/Indicadores_hospitalarios/camas_x_1000_hab.csv' , sep= ';', encoding='latin')

@@ -539,5 +539,5 @@ def other_data():
 
 def conclusiones():
 
-    st.plotly_chart(gf.covid_vs_influenza)
+    st.plotly_chart(c.covid_vs_influenza)
     st.write(c.conclusiones)
