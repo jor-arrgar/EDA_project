@@ -1,5 +1,5 @@
 import pandas as pd
-import plotly as py
+import plotly
 from plotly.offline import init_notebook_mode, iplot, plot
 init_notebook_mode(connected=True)
 import plotly.graph_objects as go
