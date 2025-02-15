@@ -529,7 +529,7 @@ total_2021.loc[175 , 'Semana'] = int('55')
 total_2021.loc[176 , 'Semana'] = int('56')
 total_2021.loc[177 , 'Semana'] = int('57')
 
-total_pandemia = total_2020.append(total_2021)
+total_pandemia = pd.concat([total_2020, total_2021])
 
 total_pandemia_graph = go.Scatter(x= total_pandemia['Semana'] , y= total_pandemia['Tasa gripe x 100.000 habitantes total'] , name= 'Gripe conjunto España' , mode= 'lines' , marker= dict(color= '#000000'))
 
